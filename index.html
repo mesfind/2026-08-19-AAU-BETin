@@ -393,53 +393,54 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 <!-- End of Bash Shell Section -->
 <!-- Start of Biopython Section -->
 <div id="biopython">
-  <h3>4. Biopython</h3>
+  <h3>4. Biopython Installation</h3>
 
   <p>
-    <a href="https://biopython.org/">Biopython</a> is a collection of freely available Python tools for computational molecular biology and bioinformatics. You will need to install it into your Python environment before the workshop.
+    <a href="https://biopython.org/">Biopython</a> is installed using Python's package manager, <code>pip</code>. Open your command-line interface (<strong>Git Bash / Anaconda Prompt</strong> on Windows, or <strong>Terminal</strong> on macOS and Linux) and use the instructions below.
   </p>
 
   <div class="row">
     <div class="col-md-4">
       <h4 id="biopython-windows">Windows</h4>
-      <ol>
-        <li>Open <strong>Git Bash</strong> or <strong>Anaconda Prompt</strong> from your Start menu.</li>
-        <li>Type the following command and press Enter:
-          <pre>conda install -c conda-forge biopython</pre>
-        </li>
-        <li>If prompted to proceed (<code>y/n</code>), type <code>y</code> and press Enter.</li>
-        <li><em>Alternative:</em> If using <code>pip</code>, run:
-          <pre>pip install biopython</pre>
-        </li>
-      </ol>
+      <p><strong>Basic Installation:</strong></p>
+      <pre>pip install biopython</pre>
+
+      <p><strong>Upgrade Existing Version:</strong></p>
+      <pre>pip install biopython --upgrade</pre>
+
+      <p><strong>If <code>pip</code> is not on PATH:</strong></p>
+      <pre>python -m pip install biopython</pre>
+      <p><em>Or specify the full path (e.g., <code>C:\Python39\Scripts\pip install biopython</code>)</em></p>
     </div>
 
     <div class="col-md-4">
       <h4 id="biopython-mac">macOS</h4>
-      <ol>
-        <li>Open <strong>Terminal</strong>.</li>
-        <li>Type the following command and press Enter:
-          <pre>conda install -c conda-forge biopython</pre>
-        </li>
-        <li>If prompted to proceed (<code>y/n</code>), type <code>y</code> and press Enter.</li>
-        <li><em>Alternative:</em> If using <code>pip</code>, run:
-          <pre>pip install biopython</pre>
-        </li>
-      </ol>
+      <p><strong>Basic Installation:</strong></p>
+      <pre>pip install biopython</pre>
+
+      <p><strong>Upgrade Existing Version:</strong></p>
+      <pre>pip install biopython --upgrade</pre>
+
+      <p><strong>Specific Python Version:</strong></p>
+      <pre>python3 -m pip install biopython</pre>
     </div>
 
     <div class="col-md-4">
       <h4 id="biopython-linux">Linux</h4>
-      <ol>
-        <li>Open your <strong>Terminal</strong>.</li>
-        <li>Type the following command and press Enter:
-          <pre>conda install -c conda-forge biopython</pre>
-        </li>
-        <li>If prompted to proceed (<code>y/n</code>), type <code>y</code> and press Enter.</li>
-        <li><em>Alternative:</em> If using <code>pip</code>, run:
-          <pre>pip install biopython</pre>
-        </li>
-      </ol>
+      <p><strong>Basic Installation:</strong></p>
+      <pre>pip install biopython</pre>
+
+      <p><strong>Upgrade Existing Version:</strong></p>
+      <pre>pip install biopython --upgrade</pre>
+
+      <p><strong>Uninstall Biopython:</strong></p>
+      <pre>pip uninstall biopython</pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <p><em>Note: If <code>pip</code> is missing on any platform, initialize it first by running:</em> <code>python -m ensurepip</code></p>
     </div>
   </div>
 </div>
